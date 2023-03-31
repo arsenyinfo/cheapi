@@ -34,10 +34,10 @@ def _ask_chatgpt(prompt):
     return result
 
 
-ash_chatgpt = CachingWrapper(_ask_chatgpt, cache_backend="memory")
+ask_chatgpt = CachingWrapper(_ask_chatgpt, cache_backend="memory")
 
 for i in range(2):
-    print(ash_chatgpt("Write a short joke about caching?") + "\n")
+    print(ask_chatgpt("Write a short joke about caching?") + "\n")
 ```
 or even simpler:
 ```python
