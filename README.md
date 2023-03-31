@@ -55,7 +55,9 @@ for i in range(2):
 ## Caching backends
 
 Using memory backend is mostly equivalent to using `functools.lru_cache` but with more configuration.
-SQLite backend is useful for persistent caching, and is similar to `joblib.Memory`.
+
+SQLite backend is useful for persistent caching, and is similar to `joblib.Memory` (with no dependencies though).
+
 Cloud backend is being dreamed of, but not implemented yet.
 
 ## Why? 
